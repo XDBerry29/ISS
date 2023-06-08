@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="275.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bibliotecaiss.controller.ImprumutaController">
+   <children>
+      <Label layoutX="68.0" layoutY="108.0" prefHeight="17.0" prefWidth="128.0" text="Cnp:" />
+      <Label layoutX="226.0" layoutY="48.0" prefHeight="35.0" prefWidth="128.0" text="Imprumuta">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cnpField" layoutX="68.0" layoutY="131.0" prefHeight="25.0" prefWidth="424.0" />
+      <Button fx:id="backButton" layoutX="68.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+      <Button fx:id="confirmButton" layoutX="290.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleConfirm" prefHeight="25.0" prefWidth="202.0" text="Confirm" />
+   </children>
+</AnchorPane>

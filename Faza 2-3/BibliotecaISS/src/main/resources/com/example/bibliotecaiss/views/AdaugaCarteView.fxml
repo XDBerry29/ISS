@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bibliotecaiss.controller.AdaugaCarteController">
+   <children>
+      <Label layoutX="42.0" layoutY="124.0" prefHeight="17.0" prefWidth="26.0" text="Titlu:" />
+      <Label layoutX="199.0" layoutY="54.0" text="Adauga Carte">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="124.0" prefHeight="17.0" prefWidth="36.0" text="Autor:" />
+      <Label layoutX="42.0" layoutY="160.0" prefHeight="17.0" prefWidth="26.0" text="Gen:" />
+      <Label layoutX="29.0" layoutY="200.0" prefHeight="17.0" prefWidth="53.0" text="Mentiuni:" />
+      <Button fx:id="backButton" layoutX="199.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="53.0" text="Back" />
+      <Button fx:id="addButton" layoutX="269.0" layoutY="314.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="25.0" prefWidth="118.0" text="Add Book" />
+      <TextField fx:id="titluField" layoutX="103.0" layoutY="120.0" />
+      <TextField fx:id="autorField" layoutX="328.0" layoutY="120.0" />
+      <TextField fx:id="genField" layoutX="103.0" layoutY="156.0" />
+      <TextArea fx:id="mentiuniArea" layoutX="103.0" layoutY="196.0" prefHeight="96.0" prefWidth="376.0" />
+   </children>
+</AnchorPane>

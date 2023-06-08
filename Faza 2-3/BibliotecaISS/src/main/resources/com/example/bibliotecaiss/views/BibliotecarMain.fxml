@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Bibleotecar Main" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bibliotecaiss.controller.BibleotecarMainController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="addBookButton" layoutX="440.0" layoutY="71.0" mnemonicParsing="false" onAction="#handleAddBook" prefHeight="25.0" prefWidth="122.0" text="Add Book" />
+            <Button fx:id="returnButton" layoutX="441.0" layoutY="39.0" mnemonicParsing="false" onAction="#handleReturn" prefHeight="25.0" prefWidth="119.0" text="Return" />
+            <Button fx:id="imprumutaButton" layoutX="439.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleImprumuta" prefHeight="25.0" prefWidth="123.0" text="Imprumuta" />
+            <Button fx:id="inregistreazaButton" layoutX="439.0" layoutY="175.0" mnemonicParsing="false" onAction="#handleInregistreaza" prefHeight="25.0" prefWidth="124.0" text="Inregistrare Abonat" />
+            <Button fx:id="logOutButton" layoutX="501.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleLogOut" text="Log out" />
+            <TableView fx:id="tabelCarti" layoutX="34.0" layoutY="30.0" prefHeight="301.0" prefWidth="368.0">
+                  <columns>
+                      <TableColumn fx:id="codexColumn" prefWidth="82.0" text="Cod Exemplar" />
+                      <TableColumn fx:id="titluColumn" minWidth="0.0" prefWidth="102.0" text="Titlu" />
+                      <TableColumn fx:id="autorColumn" prefWidth="116.0" text="Autor" />
+                      <TableColumn fx:id="genColumn" prefWidth="67.0" text="Gen" />
+                  </columns>
+            </TableView>
+            <Button fx:id="ExtindeImprumutButton" layoutX="438.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleExtinde" prefHeight="25.0" prefWidth="126.0" text="Extinde Imprumut" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>

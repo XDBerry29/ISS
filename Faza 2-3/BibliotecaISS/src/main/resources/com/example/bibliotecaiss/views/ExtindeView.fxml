@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="331.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bibliotecaiss.controller.ExtindeController">
+   <children>
+      <Label layoutX="122.0" layoutY="62.0" text="Extend">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="133.0" text="Cod Exemplar:" />
+      <TextField fx:id="codExemplarFiled" layoutX="72.0" layoutY="161.0" prefHeight="25.0" prefWidth="211.0" />
+      <Button fx:id="backButton" layoutX="72.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+      <Button fx:id="confirmButton" layoutX="130.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleReturn" prefHeight="25.0" prefWidth="150.0" text="Confirm" />
+      <Label layoutX="72.0" layoutY="196.0" text="Nr zile:" />
+      <TextField fx:id="zileField" layoutX="72.0" layoutY="213.0" prefHeight="25.0" prefWidth="211.0" />
+   </children>
+</AnchorPane>
